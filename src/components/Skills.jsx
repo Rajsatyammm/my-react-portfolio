@@ -11,7 +11,6 @@ import Git from '../assets/skills/git.png'
 import MongoDB from '../assets/skills/mongodb.png'
 import MySQL from '../assets/skills/mysql.png'
 import Redux from '../assets/skills/redux.png'
-import Tech from '../assets/tech.jpg'
 
 
 
