@@ -47,6 +47,7 @@ function Home() {
                         <br />
                         <span ref={el}></span>
                     </h2>
+                    <br />
 
                     <p className='text-grey-500 py-4 max-w-md'>
                         <span
@@ -73,7 +74,7 @@ function Home() {
 
 
                 </div>
-                <div className='w-72 lg:ml-12'>
+                <div className='w-80 lg:ml-12'>
 
                     {/* <img src={} alt="" className='rounded-2xl mx-auto w-2/3 md:w-full' /> */}
                     <img src={MyImage} alt="" className='md:mt-10 mb-5 rounded-full mx-auto w-2/3 md:w-full' />
