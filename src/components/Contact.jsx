@@ -1,31 +1,31 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 function Contact() {
 
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [text, setText] = useState("")
+    // const [name, setName] = useState("")
+    // const [email, setEmail] = useState("")
+    // const [text, setText] = useState("")
 
-    const nameHandler = (e) => {
-        setName(e.target.value)
-    }
+    // const nameHandler = (e) => {
+    //     setName(e.target.value)
+    // }
 
-    const emailHandler = (e) => {
-        setEmail(e.target.value)
-    }
+    // const emailHandler = (e) => {
+    //     setEmail(e.target.value)
+    // }
 
-    const textHandler = (e) => {
-        setText(e.target.value)
-    }
+    // const textHandler = (e) => {
+    //     setText(e.target.value)
+    // }
 
-    const submitHandler = () => {
-        const userData = {
-            name: name,
-            email: email,
-            text: text,
-        }
-        console.log(userData)
-    }
+    // const submitHandler = () => {
+    //     const userData = {
+    //         name: name,
+    //         email: email,
+    //         text: text,
+    //     }
+    //     console.log(userData)
+    // }
 
     return (
         <div
@@ -46,32 +46,32 @@ function Contact() {
 
                     <form action="https://getform.io/f/c2633d3c-d070-4018-9c7e-b1033bff5ebc"
                     method='POST'
-                        onSubmit={submitHandler}
+                        // onSubmit={submitHandler}
                         className='flex flex-col w-full md:w-1/2'
                     >
                         <input
                             type="text"
                             name='name'
-                            value={name}
+                            // value={name}
                             placeholder='Enter your name'
-                            onChange={nameHandler}
+                            // onChange={nameHandler}
                             className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
                         /> 
 
                         <input
                             type="email"
                             name='email'
-                            value={email}
+                            // value={email}
                             placeholder='Enter your email'
-                            onChange={emailHandler}
+                            // onChange={emailHandler}
                             className='my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
                         />
 
                         <textarea
                             name="message"
                             rows="6"
-                            onChange={textHandler}
-                            value={text}
+                            // onChange={textHandler}
+                            // value={text}
                             placeholder='Enter your message'
                             className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
                         ></textarea>

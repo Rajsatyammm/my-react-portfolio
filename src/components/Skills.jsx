@@ -13,9 +13,6 @@ import MySQL from '../assets/skills/mysql.png'
 import Redux from '../assets/skills/redux.png'
 
 
-
-
-
 function Experience() {
 
     const techs = [

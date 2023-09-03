@@ -5,19 +5,29 @@ import musicPlayer from '../assets/portfolio/musicPlayer.png'
 import formValidator from '../assets/portfolio/formValidator.png';
 import weatherApp from '../assets/portfolio/weatherApp.png';
 import memesGenerator from '../assets/portfolio/memeGenerator.png';
-
+import shopApp from '../assets/portfolio/shopApp.png';
+import infinityScroll from '../assets/portfolio/infinityScroll.png';
 
 
 function Portfolio() {
 
-    const portfolioArray = [
+    const projectsArray = [
         {
-            id: 1,
-            src: passGen,
-            name: 'Password Generator',
-            live: 'https://rajsatyammm.github.io/Password_Generator/',
-            code: 'https://github.com/Rajsatyammm/Password_Generator',
+            id: 10,
+            src: shopApp,
+            name: 'Shop App',
+            live: 'react-demoshopapp.netlify.app',
+            code: 'https://github.com/Rajsatyammm/shop-app',
         },
+        {
+            id: 11,
+            src: infinityScroll,
+            name: 'Infinity Scroll',
+            live: 'https://rajsatyammm.github.io/Infinity_Scroll/',
+            code: 'https://github.com/Rajsatyammm/Infinity_Scroll',
+        },
+
+        
         {
             id: 2,
             src: razorpayClone,
@@ -47,6 +57,13 @@ function Portfolio() {
             code: 'https://github.com/Rajsatyammm/Weather-App',
         },
         {
+            id: 1,
+            src: passGen,
+            name: 'Password Generator',
+            live: 'https://rajsatyammm.github.io/Password_Generator/',
+            code: 'https://github.com/Rajsatyammm/Password_Generator',
+        },
+        {
             id: 6,
             src: memesGenerator,
             name: 'Memes Generator',
@@ -73,19 +90,23 @@ function Portfolio() {
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-8'>
                     {
-                        portfolioArray.map(({ id, src, name, live, code }) => (
+                        projectsArray.map(({ id, src, name, live, code }) => (
 
                             <div key={id} className='shadow-md shadow-gray-600 rounded-2xl'>
+
                                 <img className='rounded-lg duration-200 hover:scale-105'
                                     src={src}
                                     alt="" />
+
                                 <p className='text-center mt-3'>{name}</p>
+
                                 <div className='flex items-center justify-center space-x-4 mt-2'>
                                     <button className='w-1/2 px-4 py-2 duration-200 hover:scale-105 hover:shadow-lg hover:text-green-300'>
                                         <a href={live} target='_blank' rel="noreferrer">
                                             Demo
                                         </a>
                                     </button>
+
                                     <button className='w-1/2 px-4 py-2 duration-200 hover:scale-105'>
                                         <a href={code} target='_blank' rel="noreferrer">
                                             Code
