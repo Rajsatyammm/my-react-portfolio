@@ -16,7 +16,7 @@ function Portfolio() {
             id: 10,
             src: shopApp,
             name: 'Shop App',
-            live: 'react-demoshopapp.netlify.app',
+            live: 'https://react-demoshopapp.netlify.app/',
             code: 'https://github.com/Rajsatyammm/shop-app',
         },
         {
