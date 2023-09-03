@@ -13,10 +13,10 @@ function Home() {
 
             strings: [
                 "Full Stack Developer",
-                // "Web Developer",
-                // "Java Developer",
-                // "Backend Developer",
-                // "Coder",
+                "Web Developer",
+                "Java Developer",
+                "Backend Developer",
+                "Coder",
             ],
 
             loop: true,
