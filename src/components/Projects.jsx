@@ -7,11 +7,19 @@ import weatherApp from '../assets/portfolio/weatherApp.png';
 import memesGenerator from '../assets/portfolio/memeGenerator.png';
 import shopApp from '../assets/portfolio/shopApp.png';
 import infinityScroll from '../assets/portfolio/infinityScroll.png';
+import YouTube from '../assets/portfolio/youtube.png';
 
 
 function Portfolio() {
 
     const projectsArray = [
+        {
+            id: 12,
+            src: YouTube,
+            name: 'YouTube Clone',
+            live: 'rajsatyammm-youtubeclone.netlify.app',
+            code: 'https://github.com/Rajsatyammm/YouTube_Clone',
+        },
         {
             id: 10,
             src: shopApp,
