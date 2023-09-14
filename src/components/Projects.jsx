@@ -17,7 +17,7 @@ function Portfolio() {
             id: 12,
             src: YouTube,
             name: 'YouTube Clone',
-            live: 'https://rajsatyammm-youtubeclone.vercel.app',
+            live: 'https://rajsatyammm-youtubeclone.netlify.app',
             code: 'https://github.com/Rajsatyammm/YouTube_Clone',
         },
         {
