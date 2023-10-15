@@ -33,7 +33,7 @@ function Portfolio() {
             id: 12,
             src: YouTube,
             name: 'YouTube Clone',
-            live: 'rajsatyammm-youtubeclone.vercel.app',
+            live: 'rajsatyammm-youtube-clone.vercel.app',
             code: 'https://github.com/Rajsatyammm/YouTube_Clone',
         },
         {
