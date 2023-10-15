@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import MyImage from '../assets/my-image.jpg'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import Typed from 'typed.js'
+import { RESUME_URL } from '../config/constants';
 // import 
 
 function Home() {
@@ -44,7 +45,7 @@ function Home() {
 
                     <h2 className='text-4xl sm:text-[2.5rem] font-bold'>
                         {/* Hi! I'm a Full Stack Developer */}
-                        Hi! I'm a 
+                        Hi! I'm a
                         <br />
                         <span ref={el}></span>
                     </h2>
@@ -65,7 +66,7 @@ function Home() {
                     <div>
 
                         <button className='group text-white font-medium w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-t from-cyan-500 to-blue-500'>
-                            <a href="/resume.pdf" download={true}>Resume</a>
+                            <a href={RESUME_URL} target='_blank' rel='noreferrer'>Resume</a>
                             <span className='group-hover:rotate-90 duration-300'>
                                 <MdOutlineKeyboardArrowRight className='ml-1' size={25} />
                             </span>

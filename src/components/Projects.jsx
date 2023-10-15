@@ -8,16 +8,32 @@ import memesGenerator from '../assets/portfolio/memeGenerator.png';
 import shopApp from '../assets/portfolio/shopApp.png';
 import infinityScroll from '../assets/portfolio/infinityScroll.png';
 import YouTube from '../assets/portfolio/youtube.png';
+import NetflixGPT from '../assets/portfolio/netflixGPT.png';
+import StudyNotion from '../assets/portfolio/studyNotion.png';
 
 
 function Portfolio() {
 
     const projectsArray = [
         {
+            id: 14,
+            src: StudyNotion,
+            name: 'StudyNotion',
+            // live: 'https://rajsatyammm-netflixgpt.vercel.app/',
+            // code: 'https://github.com/Rajsatyammm/NetflixGPT',
+        },
+        {
+            id: 13,
+            src: NetflixGPT,
+            name: 'Netflix GPT',
+            live: 'https://rajsatyammm-netflixgpt.vercel.app/',
+            code: 'https://github.com/Rajsatyammm/NetflixGPT',
+        },
+        {
             id: 12,
             src: YouTube,
             name: 'YouTube Clone',
-            live: 'rajsatyammm-youtubeclone.netlify.app',
+            live: 'https://rajsatyammm-youtube-clone.vercel.app',
             code: 'https://github.com/Rajsatyammm/YouTube_Clone',
         },
         {
@@ -34,8 +50,6 @@ function Portfolio() {
             live: 'https://rajsatyammm.github.io/Infinity_Scroll/',
             code: 'https://github.com/Rajsatyammm/Infinity_Scroll',
         },
-
-        
         {
             id: 2,
             src: razorpayClone,
@@ -65,14 +79,14 @@ function Portfolio() {
             code: 'https://github.com/Rajsatyammm/Weather-App',
         },
         {
-            id: 1,
+            id: 6,
             src: passGen,
             name: 'Password Generator',
             live: 'https://rajsatyammm.github.io/Password_Generator/',
             code: 'https://github.com/Rajsatyammm/Password_Generator',
         },
         {
-            id: 6,
+            id: 7,
             src: memesGenerator,
             name: 'Memes Generator',
             live: 'https://rajsatyammm.github.io/meme-generator/',

@@ -11,79 +11,86 @@ import Git from '../assets/skills/git.png'
 import MongoDB from '../assets/skills/mongodb.png'
 import MySQL from '../assets/skills/mysql.png'
 import Redux from '../assets/skills/redux.png'
+import Firebase from '../assets/skills/firebase.png'
 
 
 function Experience() {
 
     const techs = [
         {
-            id: 1,
+            id: "html",
             src: HTML,
             title: 'HTML',
             style: 'shadow-orange-500'
         },
         {
-            id: 2,
+            id: "css",
             src: CSS,
             title: 'CSS',
             style: 'shadow-blue-500'
         },
         {
-            id: 3,
+            id: "js",
             src: JavaScript,
             title: 'JavaScript',
             style: 'shadow-yellow-500'
         },
         {
-            id: 4,
+            id: "java",
             src: Java,
             title: 'Java',
             style: 'shadow-red-500'
         },
         {
-            id: 5,
+            id: "tailwind",
             src: TailwindCSS,
             title: 'Tailwind CSS',
             style: 'shadow-sky-500'
         },
         {
-            id: 6,
+            id: "react",
             src: ReactImage,
             title: 'React JS',
             style: 'shadow-blue-500'
         },
         {
-            id: 7,
+            id: "redux",
             src: Redux,
             title: 'Redux',
             style: 'shadow-blue-500'
         },
         {
-            id: 8,
+            id: "node",
             src: Node,
             title: 'Node JS',
             style: 'shadow-green-500'
         },
         {
-            id: 9,
+            id: "firebase",
+            src: Firebase,
+            title: 'Firebase',
+            style: 'shadow-yellow-500'
+        },
+        {
+            id: "git",
             src: Git,
             title: 'Git',
             style: 'shadow-red-500'
         },
         {
-            id: 10,
+            id: "github",
             src: Github,
             title: 'Github',
             style: 'shadow-gray-500'
         },
         {
-            id: 11,
+            id: "mongodb",
             src: MongoDB,
             title: 'MongoDB',
             style: 'shadow-green-500'
         },
         {
-            id: 12,
+            id: "mysql",
             src: MySQL,
             title: 'MySQL',
             style: 'shadow-orange-500'

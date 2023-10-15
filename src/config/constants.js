@@ -1,5 +1,5 @@
 
-exports.navBarMenu = [
+export const navBarMenu = [
     {
         id: 1,
         name: "home",
@@ -21,4 +21,6 @@ exports.navBarMenu = [
         name: "contact",
     }
 ]
+
+export const RESUME_URL = "https://drive.google.com/file/d/16xGyuTI7ZvrgqTMTDQiMr56MkHzyLQHe/view?usp=sharing"
 

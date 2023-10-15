@@ -1,22 +1,23 @@
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
+import axios from 'axios'
 
 function Contact() {
 
-    // const [name, setName] = useState("")
-    // const [email, setEmail] = useState("")
-    // const [text, setText] = useState("")
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [text, setText] = useState("")
 
-    // const nameHandler = (e) => {
-    //     setName(e.target.value)
-    // }
+    const nameHandler = (e) => {
+        setName(e.target.value)
+    }
 
-    // const emailHandler = (e) => {
-    //     setEmail(e.target.value)
-    // }
+    const emailHandler = (e) => {
+        setEmail(e.target.value)
+    }
 
-    // const textHandler = (e) => {
-    //     setText(e.target.value)
-    // }
+    const textHandler = (e) => {
+        setText(e.target.value)
+    }
 
     // const submitHandler = () => {
     //     const userData = {
@@ -26,6 +27,30 @@ function Contact() {
     //     }
     //     console.log(userData)
     // }
+
+    const create = async ({ name, email, message }) => {
+        try {
+            await axios({
+                method: "POST",
+                url: `${process.env.REACT_APP_BASE_URL}/savedata`,
+                data: {
+                    name: name,
+                    email: email,
+                    message: message,
+                }
+            })
+                .then(res => {
+                    console.log("success");
+                })
+                .catch(err => {
+                    console.log("error");
+                })
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    };
 
     return (
         <div
@@ -44,34 +69,46 @@ function Contact() {
 
                 <div className='flex justify-center'>
 
-                    <form action="https://getform.io/f/c2633d3c-d070-4018-9c7e-b1033bff5ebc"
-                    method='POST'
-                        // onSubmit={submitHandler}
+                    <form onSubmit={(e) => {
+                        e.preventDefault();
+                        create({
+                            name: name,
+                            email: email,
+                            message: text,
+                        })
+                        setName('')
+                        setEmail('')
+                        setText('')
+                        alert('your response has successfully been submitted')
+
+                    }}
+                        // method='POST'
+
                         className='flex flex-col w-full md:w-1/2'
                     >
                         <input
                             type="text"
                             name='name'
-                            // value={name}
+                            value={name}
                             placeholder='Enter your name'
-                            // onChange={nameHandler}
+                            onChange={nameHandler}
                             className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
-                        /> 
+                        />
 
                         <input
                             type="email"
                             name='email'
-                            // value={email}
+                            value={email}
                             placeholder='Enter your email'
-                            // onChange={emailHandler}
+                            onChange={emailHandler}
                             className='my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
                         />
 
                         <textarea
                             name="message"
                             rows="6"
-                            // onChange={textHandler}
-                            // value={text}
+                            onChange={textHandler}
+                            value={text}
                             placeholder='Enter your message'
                             className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
                         ></textarea>
