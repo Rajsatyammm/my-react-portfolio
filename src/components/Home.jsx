@@ -15,10 +15,11 @@ function Home() {
 
             strings: [
                 "Full Stack Developer",
-                "Web Developer",
                 "Java Developer",
+                "Spring Developer",
                 "Backend Developer",
                 "Coder",
+                "DSA Lover",
             ],
 
             loop: true,
@@ -60,7 +61,11 @@ function Home() {
                         </span>
                         atyam raj,
                         <br />
-                        Experienced Java coder skilled in DSA, OOP, React, and Node.js. Committed to staying current, pursuing innovative projects for quality-driven solutions, and continuous self-improvement.
+                        👨‍💻 Java Developer specializing in Servlets, JSP, JSTL, and JDBC. Experienced in Frameworks like Hibernate, Spring Framework (Spring CORE). 
+                        <br />
+                        Solved approx 500 problems of Data Structures and Algorithms on Leetcode. 
+                        <br />
+                        🚀 Skilled in MERN stack with Redux.js for dynamic web applications. Let's build something great!
                     </p>
 
                     <div>

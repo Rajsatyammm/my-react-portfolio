@@ -12,6 +12,7 @@ import MongoDB from '../assets/skills/mongodb.png'
 import MySQL from '../assets/skills/mysql.png'
 import Redux from '../assets/skills/redux.png'
 import Firebase from '../assets/skills/firebase.png'
+import Hibernate from "../assets/skills/hibernate.png"
 
 
 function Experience() {
@@ -36,10 +37,16 @@ function Experience() {
             style: 'shadow-yellow-500'
         },
         {
-            id: "java",
+            id: "j2se",
             src: Java,
             title: 'Java',
             style: 'shadow-red-500'
+        },
+        {
+            id: "hibernate",
+            src: Hibernate,
+            title: 'Hibernate',
+            style: 'shadow-yellow-500'
         },
         {
             id: "tailwind",
